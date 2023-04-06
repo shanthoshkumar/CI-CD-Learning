@@ -12,9 +12,3 @@ jobs:
     env: 
       BUCKET: http://localhost:8000/
       DIST: build
-
-    steps:
-    - uses: actions/checkout@v1
-    - name: npx serve
-      run: |
-        npx serve
