@@ -1,4 +1,4 @@
-name: CI
+name: Build and deploy React App to Localhost
 
 on: 
   push:
@@ -6,14 +6,11 @@ on:
 
 
 jobs: 
-  build: 
-    steps: 
-     - uses: actions/checkout@v1
-       - name: npm install
-         run: |
-           npm install
-       - name: npm start
-        run: |
-          npm start
+  build-and-deploy: 
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    env: 
+      BUCKET: http://localhost:8000/
+      DIST: build
 
           
