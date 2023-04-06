@@ -1,0 +1,41 @@
+body{
+  background-color: pink;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+button{
+  margin-left: 10px;
+}
+
+.content img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  }
+  
+.content{
+  text-align: center;
+  animation: move 10s infinite;
+  position: relative;
+}
+
+@keyframes move{
+  from {
+    left: -300px
+  }
+
+  to {
+    left: 300px
+  }
+}
+
